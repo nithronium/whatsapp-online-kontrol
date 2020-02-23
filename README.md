@@ -24,4 +24,9 @@ Görüldüğü gibi 3 farklı çevrimiçi olma durumunu ayrı ayrı konsola yaz�
 
 Artık takip ettiğiniz kişi çevrimiçi olduğunda script kaydetmeye başlayacak, tekrar çevrimdışı olduğunda kaydı bitirip çevrimiçi olma zamanını konsola yazdıracak.
 
+## Ek Özellikler
+
+Vaktim olursa birisi size yazıyorken iptal ederse ya da ses kaydı yaparken iptal ederse bunu da konsola yazdıracak ek fonksiyonlar yazabilirim.
+
+
 Whatsapp web'i incelerken aklıma gelen bir fikir sonucu yazdığım bir script. Hataları olabilir, performans geliştirmeleri yapılabilir ama çok üstüne düşemedim. İyi stalklamalar! 
