@@ -6,7 +6,9 @@ setInterval(function(){
     d.toLocaleTimeString();
     var source = document.getElementsByTagName('html')[0].innerHTML;
     var foundIndex = source.search("çevrimiçi");
-    if(foundIndex != -1){
+    var foundYaziyor = source.search("yazıyor");
+    var foundSes = source.search("ses kayd");
+    if((foundIndex != -1) || (foundYaziyor != -1) || (foundSes !=-1)){
         if (ilkcevrim == "0"){
             ilkcevrim = d;
         }
