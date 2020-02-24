@@ -10,8 +10,8 @@ setInterval(function(){
     d.toLocaleTimeString();
     var source = document.getElementsByTagName('html')[0].innerHTML;
     var foundIndex = source.search("çevrimiçi");
-    var foundYaziyor = source.search('title="yazıyor');
-    var foundSes = source.search('title="ses kayd');
+    var foundYaziyor = source.search('<div class="_3Q3ui i1XSV"><span title="yazıyor');
+    var foundSes = source.search('<div class="_3Q3ui i1XSV"><span title="ses kayd');
 
     //Çevrimiçi kontrol
     if((foundIndex != -1) || (foundYaziyor != -1) || (foundSes !=-1)){
