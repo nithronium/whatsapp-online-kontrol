@@ -4,14 +4,31 @@ var ilkyaziyor = "0";
 var sonyaziyor = "0";
 var ilkses = "0";
 var sonses = "0";
+var langsource = document.getElementsByTagName('html')[0].innerHTML;
+langsource = langsource.search("Durum");
+if (langsource != -1){
+    langsource = "TR";
+}
+else {
+    langsource = "EN";
+}
+
 
 setInterval(function(){
     var d = new Date();
     d.toLocaleTimeString();
     var source = document.getElementsByTagName('html')[0].innerHTML;
-    var foundIndex = source.search("çevrimiçi");
-    var foundYaziyor = source.search('<div class="_3Q3ui i1XSV"><span title="yazıyor');
-    var foundSes = source.search('<div class="_3Q3ui i1XSV"><span title="ses kayd');
+    if (langsource = "TR"){
+        var foundIndex = source.search("çevrimiçi");
+        var foundYaziyor = source.search('<div class="_3Q3ui i1XSV"><span title="yazıyor');
+        var foundSes = source.search('title="ses kayd');
+    }
+    else {
+        var foundIndex = source.search("online");
+        var foundYaziyor = source.search('<div class="_3Q3ui i1XSV"><span title="typing');
+        var foundSes = source.search('<div class="_3Q3ui i1XSV"><span title="voice rec');
+    }
+
 
     //Çevrimiçi kontrol
     if((foundIndex != -1) || (foundYaziyor != -1) || (foundSes !=-1)){
