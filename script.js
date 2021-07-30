@@ -20,13 +20,13 @@ setInterval(function(){
     var source = document.getElementsByTagName('html')[0].innerHTML;
     if (langsource = "TR"){
         var foundIndex = source.search("çevrimiçi");
-        var foundYaziyor = source.search('<div class="_3Q3ui i1XSV"><span title="yazıyor');
+        var foundYaziyor = source.search('title="yazıyor');
         var foundSes = source.search('title="ses kayd');
     }
     else {
         var foundIndex = source.search("online");
-        var foundYaziyor = source.search('<div class="_3Q3ui i1XSV"><span title="typing');
-        var foundSes = source.search('<div class="_3Q3ui i1XSV"><span title="voice rec');
+        var foundYaziyor = source.search('title="typing');
+        var foundSes = source.search('title="voice rec');
     }
 
 
